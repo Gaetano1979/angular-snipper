@@ -1,0 +1,14 @@
+<app-table
+  [items]="items"
+  [columns]="columns"
+>
+  <div *tableHead="let head; let i = index" class="table-head">
+    {{ i }}) {{ head | titlecase }}
+  </div>
+  <div *tableCell="let cell; let column = column" class="table-cell">
+    <span
+      [ngStyle]="{ 'color': cell == '99' && column == 'age' ? 'red' : 'initial' }"
+    >{{ cell }}
+    </span>
+  </div>
+</app-table>

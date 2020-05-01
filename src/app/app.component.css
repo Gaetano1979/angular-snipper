@@ -1,0 +1,14 @@
+.table-head {
+  background: royalblue;
+  color: white;
+}
+
+.table-cell {
+  background: rgba(0,0,0,.1);
+}
+
+.table-cell, .table-head {
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+}
